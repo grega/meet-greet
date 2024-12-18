@@ -2,7 +2,6 @@ from flask import Flask
 from flask_cors import CORS
 from threading import Thread
 import cv2
-import numpy as np
 import math
 import time
 
