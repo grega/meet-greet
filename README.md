@@ -1,6 +1,6 @@
-# Automated greets on Google Meets
+# Automated greets on Google Meet
 
-Uses Python to capture a video feed which is then sent to Google Meets, along with a script to detect when someone joins the call. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed.
+Uses Python to capture a video feed which is then sent to Google Meet, along with a script to detect when someone joins the call. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed.
 
 Robot hand waving coming next...
 
@@ -24,8 +24,8 @@ python main.py
 ```
 3. Open OBS and add a new source of type "macOS Screen Capture" with the method "Window Capture" and the window "[python] Video Feed"
 4. Start the virtual camera in OBS
-5. Open Google Meets and select the OBS virtual camera as the video source
-6. In a Google Meets call, open the "People" (or "Participants") panel
+5. Open Google Meet and select the OBS virtual camera as the video source
+6. In a Google Meet call, open the "People" (or "Participants") panel
 7. Run the `browser-console.js` script in the DevTools console and enjoy the automated greets whenever someone joins
 
 ## Notes
