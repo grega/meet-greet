@@ -1,4 +1,4 @@
-# Automated greets on Google Meet
+# Automated greet on Google Meet
 
 Uses Python to capture a video feed which is then sent to Google Meet, along with a script to detect when someone joins the call. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed.
 
