@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Participant Tracker",
+  "version": "1.0",
+  "description": "Tracks participants in a web application and sends events to a server.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:5000/*"],
+  "action": {
+    "default_title": "Track Participants",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
