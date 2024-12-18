@@ -18,7 +18,7 @@ Only tested on macOS 15 and using Chrome.
 asdf install
 pip install -r requirements.txt
 ```
-2. Run the script:
+2. Run the HTTP server and video feed:
 ```bash
 python main.py
 ```
