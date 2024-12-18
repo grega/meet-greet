@@ -32,4 +32,6 @@ python main.py
 
 Press 'w' when viewing the Python video feed window to toggle a greeting.
 
+Work in progress: packaging the `browser-console.js` script into a Chrome extension.
+
 [pyvirtualcam](https://pypi.org/project/pyvirtualcam/) would be preferable to OBS, but it doesn't seem to work yet on macOS 15.
