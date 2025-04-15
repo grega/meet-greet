@@ -3,7 +3,6 @@ from flask_cors import CORS
 from buildhat import Motor
 import threading
 import time
-import keyboard
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -37,19 +36,9 @@ def handle_motor_event():
             new_participant_event = False
         time.sleep(0.1)
 
-def handle_key_press():
-    global new_participant_event
-    while True:
-        if keyboard.is_pressed('w'):
-            print("Keypress 'w' detected")
-            new_participant_event = True
-            time.sleep(0.5) # debounce
-        time.sleep(0.1)
-
 def run_flask():
     app.run(port=5000, host='0.0.0.0', debug=False, use_reloader=False)
 
 if __name__ == '__main__':
     threading.Thread(target=handle_motor_event, daemon=True).start()
-    threading.Thread(target=handle_key_press, daemon=True).start()
     run_flask()
