@@ -1,6 +1,6 @@
-# Automated greets on Google Meet
+# Automated greet on Google Meet
 
-Uses Python to capture a video feed which is then sent to Google Meet, along with a script to detect when someone joins the call. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed.
+Uses Python to capture a video feed which is then sent to Google Meet, along with a JS script to detect new participants. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed.
 
 Robot hand waving coming next...
 
@@ -18,7 +18,7 @@ Only tested on macOS 15 and using Chrome.
 asdf install
 pip install -r requirements.txt
 ```
-2. Run the script:
+2. Run the HTTP server and video feed:
 ```bash
 python main.py
 ```
