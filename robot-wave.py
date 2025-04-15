@@ -22,11 +22,18 @@ def handle_motor_event():
     while True:
         if new_participant_event:
             print("Motor event triggered")
-            for _ in range(6): # 6 alternating 90 degree rotations at 50% speed
-                motor.run_for_degrees(90, 50)
-                time.sleep(0.5)
-                motor.run_for_degrees(-90, 50)
-                time.sleep(0.5)
+
+            for i in range(3):
+                motor.run_to_position(25, speed=100)
+                time.sleep(0.2)
+                motor.run_to_position(0, speed=100)
+                time.sleep(0.2)
+
+                motor.run_to_position(-25, speed=100)
+                time.sleep(0.2)
+                motor.run_to_position(0, speed=100)
+                time.sleep(0.2)
+
             new_participant_event = False
         time.sleep(0.1)
 
