@@ -33,16 +33,16 @@ python animate-wave.py
 
 ### For the Build HAT motor:
 
-1. Run the script on a Raspberry Pi with a Build HAT connected, and a motor connected to port A (build an appropriate hand waving mechanism connceted to the motor):
+1. Run the script on a Raspberry Pi with a Build HAT connected, and a motor connected to port A (build an appropriate hand waving mechanism connceted to the motor), `sudo` is needed for keyboard access:
 ```bash
-python robot-wave.py
+sudo python robot-wave.py
 ```
 2. In a Google Meet call, open the "People" (or "Participants") panel
 3. Run the `browser-console.js` script (switching out `http://localhost` for the address of the Raspberry Pi) in the DevTools console and enjoy the robot hand wave whenever someone joins
 
 ## Notes
 
-Press 'w' when viewing the Python video feed window, or when running the Build HAT service, to toggle a greeting.
+Press 'w' when viewing the Python video feed window, or when running the Build HAT service, to toggle a greeting manually.
 
 Work in progress: packaging the `browser-console.js` script into a Chrome extension.
 
