@@ -31,6 +31,8 @@ ngrok http 5000
 
 This will set up a tunnel to the local server running on port 5000, and give you a URL over HTTPS that you can use in the browser console script which you can append the participant joined path to, eg. `https://11e4-xxx-xxx-xxx-xxx.ngrok-free.app/participant-joined`. Use this URL in the `browser-console.js` script (below) in place of `http://localhost:5000`.
 
+A self-signed certificate could also be used, but this involves a bit more faff.
+
 ### For the animation / overlay:
 
 1. Run the HTTP server and video feed:
