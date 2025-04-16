@@ -15,12 +15,21 @@ Only tested on macOS 15 and using Chrome.
 ## Instructions
 
 Install the requirements:
+
 ```bash
 asdf install
 python -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
+
+For the Build HAT / robot hand wave (ie. anything that's not hosted on the local machine), the script running in the browser console in Google Meet requires HTTPS for all `fetch()` requests, so install ngrok on the Pi (https://ngrok.com/docs/guides/device-gateway/raspberry-pi/) followed by:
+
+```bash
+ngrok http 5000
+```
+
+This will set up a tunnel to the local server running on port 5000, and give you a URL over HTTPS that you can use in the browser console script which you can append the participant joined path to, eg. `https://11e4-xxx-xxx-xxx-xxx.ngrok-free.app/participant-joined`. Use this URL in the `browser-console.js` script (below) in place of `http://localhost:5000`.
 
 ### For the animation / overlay:
 
@@ -41,7 +50,7 @@ python animate-wave.py
 python robot-wave.py
 ```
 2. In a Google Meet call, open the "People" (or "Participants") panel
-3. Run the `browser-console.js` script (switching out `http://localhost` for the address of the Raspberry Pi) in the DevTools console and enjoy the robot hand wave whenever someone joins
+3. Run the `browser-console.js` script (switching out `http://localhost` for the address of the Raspberry Pi / ngrok tunnel, as above) in the DevTools console and enjoy the robot hand wave whenever someone joins
 
 ## Notes
 
