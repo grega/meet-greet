@@ -2,7 +2,7 @@
 
 Uses Python to capture a video feed which is then sent to Google Meet, along with a JS script to detect new participants. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed.
 
-Robot hand waving coming next...
+[Robot hand waving coming next](https://github.com/grega/meet-greet/tree/build-hat)...
 
 ## Requirements
 
