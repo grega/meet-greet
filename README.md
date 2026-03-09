@@ -1,6 +1,6 @@
 # Automated greet on Google Meet
 
-Consists of a JS script to detect when a new participant joins a Google Meet call, then either:
+Consists of some JavaScript which detects when a new participant joins a Google Meet call, then either:
 
 * They will be greeted by a waving animation overlaid on your video feed
 * A [Build HAT](https://www.raspberrypi.com/products/build-hat/), connected to a Raspberry Pi, rotates a Lego motor with a hand-waving mechanism attached to it to greet them, eg:
