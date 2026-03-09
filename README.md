@@ -3,7 +3,7 @@
 Consists of a JS script to detect when a new participant joins a Google Meet call, then either:
 
 * They will be greeted by a waving animation overlaid on your video feed
-* The Build HAT library, running on a Raspberry Pi with Build HAT connected, rotates a motor with a hand-waving mechanism attached to it to greet them, eg:
+* A [Build HAT](https://www.raspberrypi.com/products/build-hat/), connected to a Raspberry Pi, rotates a Lego motor with a hand-waving mechanism attached to it to greet them, eg:
 
   https://github.com/user-attachments/assets/4f15fe1c-9a65-493a-97ef-2f3a92965a57
 
