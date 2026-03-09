@@ -1,9 +1,9 @@
 # Automated greet on Google Meet
 
-Either:
+Consists of a JS script to detect when a new participant joins a Google Meet call, then either:
 
-* Uses Python to capture a video feed which is then sent to Google Meet, along with a JS script to detect new participants. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed
-* Uses Python and the Build HAT library, running on a Raspberry Pi (with Build HAT connected), to rotate a motor which can have some sort of hand-waving mechanism attached to it. When someone joins, they will be automatically greeted with a waving robotic hand, eg:
+* They will be greeted by a waving animation overlaid on your video feed
+* The Build HAT library, running on a Raspberry Pi with Build HAT connected, rotates a motor with a hand-waving mechanism attached to it to greet them
 
   https://github.com/user-attachments/assets/4f15fe1c-9a65-493a-97ef-2f3a92965a57
 
