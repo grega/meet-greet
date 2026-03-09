@@ -3,7 +3,9 @@
 Either:
 
 * Uses Python to capture a video feed which is then sent to Google Meet, along with a JS script to detect new participants. When someone joins, they will be automatically greeted with a waving animation overlaid on the video feed
-* Uses Python and the Build HAT library, running on a Raspberry Pi (with Build HAT connected), to rotate a motor which can have some sort of hand-waving mechanism attached to it. When someone joins, they will be automatically greeted with a waving robotic hand
+* Uses Python and the Build HAT library, running on a Raspberry Pi (with Build HAT connected), to rotate a motor which can have some sort of hand-waving mechanism attached to it. When someone joins, they will be automatically greeted with a waving robotic hand, eg:
+
+  https://github.com/user-attachments/assets/4f15fe1c-9a65-493a-97ef-2f3a92965a57
 
 ## Requirements
 
@@ -45,6 +47,10 @@ python animate-wave.py
 5. In a Google Meet call, open the "People" (or "Participants") panel
 6. Run the `browser-console.js` script in the DevTools console and enjoy the automated greets whenever someone joins
 
+Press 'w' when viewing the Python video feed window to toggle a greeting manually.
+
+[pyvirtualcam](https://pypi.org/project/pyvirtualcam/) would be preferable to OBS, but it doesn't seem to work yet on macOS 15.
+
 ### For the Build HAT motor:
 
 1. Run the script on a Raspberry Pi with a Build HAT connected, and a motor connected to port A (build an appropriate hand waving mechanism connceted to the motor), `sudo` is needed for keyboard access:
@@ -56,8 +62,4 @@ python robot-wave.py
 
 ## Notes
 
-Press 'w' when viewing the Python video feed window to toggle a greeting manually.
-
 Work in progress: packaging the `browser-console.js` script into a Chrome extension.
-
-[pyvirtualcam](https://pypi.org/project/pyvirtualcam/) would be preferable to OBS, but it doesn't seem to work yet on macOS 15.
