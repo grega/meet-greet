@@ -53,7 +53,7 @@ Press 'w' when viewing the Python video feed window to toggle a greeting manuall
 
 ### For the Build HAT motor:
 
-1. Run the script on a Raspberry Pi with a Build HAT connected, and a motor connected to port A (build an appropriate hand waving mechanism connceted to the motor), `sudo` is needed for keyboard access:
+1. Run the script on a Raspberry Pi with a Build HAT connected, and a motor connected to port A (build an appropriate hand waving mechanism connected to the motor):
 ```bash
 python robot-wave.py
 ```
